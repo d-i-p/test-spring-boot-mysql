@@ -11,6 +11,7 @@ import java.util.List;
 //TODO logging
 //TODO exception management
 //TODO add tests
+//TODO Dockerization
 
 @RestController("/")
 public class IngredientController {
