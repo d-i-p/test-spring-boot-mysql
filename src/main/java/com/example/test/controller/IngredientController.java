@@ -3,12 +3,11 @@ package com.example.test.controller;
 import com.example.test.models.Ingredient;
 import com.example.test.repository.IngredientsRepository;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.commons.logging.Log;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//TODO logging
 //TODO exception management
 //TODO add tests
 //TODO Dockerization
@@ -16,7 +15,6 @@ import java.util.List;
 @RestController("/")
 public class IngredientController {
 
-    @Autowired
     private IngredientsRepository ingredientsRepository;
 
     public IngredientController(IngredientsRepository ingredientsRepository) {
